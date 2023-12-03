@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@font-face {
+    font-family: "Black Ops One";
+    src: url(./assets/fonts/BlackOpsOne-Regular.ttf);
+}
+
+body
+
+{
+    font-family: "Black Ops One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(./assets/img/hack\ 2.gif) center/cover;
+/* VH 100 Pourcent = la taille de tout le site pour l'iamge */
+    min-height: 100vh;
+
+}
+
+h1 
+
+{
+    /* transfo du texte en majuscule */
+    text-transform: uppercase;
+    /* couleur du texte ( en l'occurence pour h1 ) */
+    color: aquamarine;
+    /* espacement des lettres  */
+    letter-spacing: 3px;
+    /* allignement du texte pour qu'il soit au centre  */
+    text-align: center;
+    /* Mec le font tu le mesure toujours en rem le truc à côté du 2,5 pas en pixel ou autre et le font si jamais c'est la police */
+    font-size:2.5rem;
+    /* omnbre */
+    text-shadow: -4px -3px 0 #000000c4;
+    font-family: "Black Ops One", sans-serif;
+
+
+}
+
+
+p {
+    animation-duration: 3s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+    
+  }
+
+
+.aller {
+    animation-direction: normal;
+  }
+  
+  .retour {
+    animation-duration: 10s;
+    animation-direction: reverse;
+  }
+  @keyframes glissement {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
